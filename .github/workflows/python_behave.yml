@@ -1,4 +1,4 @@
-name: allure-python-behave
+name: python-behave
 
 on:
   push:
