@@ -56,4 +56,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: tnr-pages
-          PUBLISH_DIR:rs_allure-history
+          PUBLISH_DIR: allure-history
