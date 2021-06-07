@@ -1,4 +1,4 @@
-name: python-behave
+name: rs-tnr-behave
 
 on:
   push:
