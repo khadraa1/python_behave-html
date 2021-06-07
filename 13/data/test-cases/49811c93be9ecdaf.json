@@ -1,0 +1,209 @@
+{
+  "uid" : "49811c93be9ecdaf",
+  "name" : "Close existing milestone for authorized user",
+  "fullName" : "Milestones: Close existing milestone for authorized user",
+  "historyId" : "89b918b912287df1aae4c789a297a192",
+  "time" : {
+    "start" : 1623078388002,
+    "stop" : 1623078388003,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When I open milestones page",
+      "time" : {
+        "start" : 1623078388002,
+        "stop" : 1623078388002,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I create milestone with title \"hello\"",
+      "time" : {
+        "start" : 1623078388002,
+        "stop" : 1623078388002,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I delete milestone with title \"hello\"",
+      "time" : {
+        "start" : 1623078388003,
+        "stop" : 1623078388003,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I should not see milestone with content \"hello\"",
+      "time" : {
+        "start" : 1623078388003,
+        "stop" : 1623078388003,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "feature",
+    "value" : "Milestones"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "3011bdac70700c03",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/12//#testresult/3011bdac70700c03",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623078029255,
+          "stop" : 1623078029257,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "7e69fe48066f0a67",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/8//#testresult/7e69fe48066f0a67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623077043414,
+          "stop" : 1623077043415,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "124ed739b8e6f66a",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/7//#testresult/124ed739b8e6f66a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623060042085,
+          "stop" : 1623060042086,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "75ac68d77e80c46",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/6//#testresult/75ac68d77e80c46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623059788849,
+          "stop" : 1623059788850,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "973092d4abde04ca",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/5//#testresult/973092d4abde04ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623058361226,
+          "stop" : 1623058361227,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "82bfb7cbee826c34",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/4//#testresult/82bfb7cbee826c34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622204052633,
+          "stop" : 1622204052634,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "d948f9e0bab66cc7",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/3//#testresult/d948f9e0bab66cc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622195417810,
+          "stop" : 1622195417812,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "35064174fb5a9097",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/2//#testresult/35064174fb5a9097",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622194613623,
+          "stop" : 1622194613624,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3c45b7e877ef660a",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/1//#testresult/3c45b7e877ef660a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622194596179,
+          "stop" : 1622194596180,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "regress" ]
+  },
+  "source" : "49811c93be9ecdaf.json",
+  "parameterValues" : [ ]
+}
