@@ -1,0 +1,208 @@
+{
+  "uid" : "1230f576fafa912b",
+  "name" : "Create new label for authorized user",
+  "fullName" : "Labels: Create new label for authorized user",
+  "historyId" : "8c3a5b90445408153e29b97a06975a23",
+  "time" : {
+    "start" : 1623078833833,
+    "stop" : 1623078833834,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When I open labels page",
+      "time" : {
+        "start" : 1623078833833,
+        "stop" : 1623078833833,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I create label with title \"hello\"",
+      "time" : {
+        "start" : 1623078833834,
+        "stop" : 1623078833834,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I should see label with title \"hello\"",
+      "time" : {
+        "start" : 1623078833834,
+        "stop" : 1623078833834,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "75f1a50a2f8eedea",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/13//#testresult/75f1a50a2f8eedea",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1623078385991,
+          "stop" : 1623078385992,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9f5978907939e757",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/12//#testresult/9f5978907939e757",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1623078026239,
+          "stop" : 1623078026240,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "640737ce3a85dea8",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/8//#testresult/640737ce3a85dea8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623077042404,
+          "stop" : 1623077042406,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "8b813da3085f867a",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/7//#testresult/8b813da3085f867a",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1623060039073,
+          "stop" : 1623060039075,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "5e50c7abbcca6b4c",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/6//#testresult/5e50c7abbcca6b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623059786839,
+          "stop" : 1623059786840,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3d146cea7ce09212",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/5//#testresult/3d146cea7ce09212",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623058358213,
+          "stop" : 1623058358215,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "a4eb6476912aa539",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/4//#testresult/a4eb6476912aa539",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622204052627,
+          "stop" : 1622204052628,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9c1143c18ef154e4",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/3//#testresult/9c1143c18ef154e4",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1622195416801,
+          "stop" : 1622195416802,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "14584e5992bd1060",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/2//#testresult/14584e5992bd1060",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622194611613,
+          "stop" : 1622194611614,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "1d9d4f3154b635d8",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/1//#testresult/1d9d4f3154b635d8",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1622194594168,
+          "stop" : 1622194594169,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "regress" ]
+  },
+  "source" : "1230f576fafa912b.json",
+  "parameterValues" : [ ]
+}
