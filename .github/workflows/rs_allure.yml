@@ -1,0 +1,59 @@
+name: python-behave
+
+on:
+  push:
+    branches-ignore:
+      - '!master'
+
+jobs:
+  autotests:
+    name: Run tests and generate Allure Report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check code style
+        if: always()
+        run: |
+          flake8
+
+      - name: Run Test
+        if: always()
+        run: behave --format=allure_behave.formatter:AllureFormatter -o allure-results
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: rs-tnr
+          path: rs-tnr
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/rs_allure-report-action@master
+        if: always()
+        #id: allure-report
+        with:
+          rs_allure_results: rs_allure_results
+          #rs-tnr: rs-tnr
+          #allure_report: allure-report
+          rs_allure_history: rs_allure-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-tnr-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: tnr-pages
+          PUBLISH_DIR:rs_allure-history
