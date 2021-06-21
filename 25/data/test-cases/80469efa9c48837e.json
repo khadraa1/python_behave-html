@@ -1,0 +1,179 @@
+{
+  "uid" : "80469efa9c48837e",
+  "name" : "Create new milestone for authorized user",
+  "fullName" : "Milestones: Create new milestone for authorized user",
+  "historyId" : "0f0a15182df0b840d6d9b36e79eb6484",
+  "time" : {
+    "start" : 1624289077631,
+    "stop" : 1624289077632,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When I open milestones page",
+      "time" : {
+        "start" : 1624289077631,
+        "stop" : 1624289077631,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I create milestone with title \"hello\"",
+      "time" : {
+        "start" : 1624289077631,
+        "stop" : 1624289077631,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I should see milestone with title \"hello\"",
+      "time" : {
+        "start" : 1624289077631,
+        "stop" : 1624289077632,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "feature",
+    "value" : "Milestones"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "9ceaf7040c58af3e",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/24//#testresult/9ceaf7040c58af3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624287295109,
+          "stop" : 1624287295111,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "56bb7e5951a351cf",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/23//#testresult/56bb7e5951a351cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004460607,
+          "stop" : 1624004460608,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9795411ec2f2d96",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/22//#testresult/9795411ec2f2d96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004400457,
+          "stop" : 1624004400458,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "49983d7bd09e5019",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/21//#testresult/49983d7bd09e5019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004225833,
+          "stop" : 1624004225835,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "9941ed394b6a5eef",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/20//#testresult/9941ed394b6a5eef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623420689253,
+          "stop" : 1623420689254,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f71fdf2a747ee793",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/19//#testresult/f71fdf2a747ee793",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623420092669,
+          "stop" : 1623420092670,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "4677c581aa61b471",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/17//#testresult/4677c581aa61b471",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623419858270,
+          "stop" : 1623419858271,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "regress", "smoke" ]
+  },
+  "source" : "80469efa9c48837e.json",
+  "parameterValues" : [ ]
+}
