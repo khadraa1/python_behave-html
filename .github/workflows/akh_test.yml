@@ -26,6 +26,14 @@ jobs:
           echo "bucket: ${{ env.bucket }}"
     
       - uses: actions/checkout@v2
+      
+      - name: conditional command
+        run: |
+          if ${{ env.bucket }} == 'rs-develop'; then
+              echo "bingo bucket: ${{ env.bucket }}"
+          else
+              echo "domage bucket: ${{ env.bucket }}"
+          fi
 
       - name: Set up Python 3.x
         uses: actions/setup-python@v2
