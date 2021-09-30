@@ -30,9 +30,8 @@ jobs:
       - name: conditional command
         run: |
           if ${{ env.bucket }} == 'rs-develop'; then
-                #export tnr_branche == 'gh-pages'
-                echo "tnr_branch == 'gh-pages'" 
+                echo "tnr_branch=phase::gh-page"
           else
               echo "domage bucket: ${{ env.bucket }}"
           fi
-      - run: echo $tnr_branc  
+      - run: echo $tnr_branch  
