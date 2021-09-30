@@ -1,0 +1,224 @@
+{
+  "uid" : "84b82a18d35fd280",
+  "name" : "Create new milestone for authorized user",
+  "fullName" : "Milestones: Create new milestone for authorized user",
+  "historyId" : "0f0a15182df0b840d6d9b36e79eb6484",
+  "time" : {
+    "start" : 1632992172078,
+    "stop" : 1632992172079,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When I open milestones page",
+      "time" : {
+        "start" : 1632992172079,
+        "stop" : 1632992172079,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And I create milestone with title \"hello\"",
+      "time" : {
+        "start" : 1632992172079,
+        "stop" : 1632992172079,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then I should see milestone with title \"hello\"",
+      "time" : {
+        "start" : 1632992172079,
+        "stop" : 1632992172079,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "feature",
+    "value" : "Milestones"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "7b3a9bf73373c2d",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/29//#testresult/7b3a9bf73373c2d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632991938352,
+          "stop" : 1632991938353,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "ffcd4c9791e8caa5",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/28//#testresult/ffcd4c9791e8caa5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624289571575,
+          "stop" : 1624289571578,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "3a9f827180c65457",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/27//#testresult/3a9f827180c65457",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624289196602,
+          "stop" : 1624289196603,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "715f02c0c433b53",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/26//#testresult/715f02c0c433b53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624289142383,
+          "stop" : 1624289142384,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "80469efa9c48837e",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/25//#testresult/80469efa9c48837e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624289077631,
+          "stop" : 1624289077632,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9ceaf7040c58af3e",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/24//#testresult/9ceaf7040c58af3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624287295109,
+          "stop" : 1624287295111,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "56bb7e5951a351cf",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/23//#testresult/56bb7e5951a351cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004460607,
+          "stop" : 1624004460608,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9795411ec2f2d96",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/22//#testresult/9795411ec2f2d96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004400457,
+          "stop" : 1624004400458,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "49983d7bd09e5019",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/21//#testresult/49983d7bd09e5019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004225833,
+          "stop" : 1624004225835,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "9941ed394b6a5eef",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/20//#testresult/9941ed394b6a5eef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623420689253,
+          "stop" : 1623420689254,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f71fdf2a747ee793",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/19//#testresult/f71fdf2a747ee793",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623420092669,
+          "stop" : 1623420092670,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "4677c581aa61b471",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/17//#testresult/4677c581aa61b471",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623419858270,
+          "stop" : 1623419858271,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "regress", "smoke" ]
+  },
+  "source" : "84b82a18d35fd280.json",
+  "parameterValues" : [ ]
+}
