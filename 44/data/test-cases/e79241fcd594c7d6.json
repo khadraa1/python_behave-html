@@ -1,0 +1,319 @@
+{
+  "uid" : "e79241fcd594c7d6",
+  "name" : "Add label to existing issue for authorized user",
+  "fullName" : "Labels: Add label to existing issue for authorized user",
+  "historyId" : "3ca2a82570b650339433b7160c01f3d9",
+  "time" : {
+    "start" : 1633006827916,
+    "stop" : 1633006828919,
+    "duration" : 1003
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When I open issue with id 123123",
+      "time" : {
+        "start" : 1633006827916,
+        "stop" : 1633006827917,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I add label with title \"hello\" to issue",
+      "time" : {
+        "start" : 1633006827917,
+        "stop" : 1633006827917,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I filter issue by label title \"hello\"",
+      "time" : {
+        "start" : 1633006827917,
+        "stop" : 1633006827917,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I should see issue with label title \"hello\"",
+      "time" : {
+        "start" : 1633006827917,
+        "stop" : 1633006828918,
+        "duration" : 1001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 15,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "c051a08b1d8561ea",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/43//#testresult/c051a08b1d8561ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633006812268,
+          "stop" : 1633006813270,
+          "duration" : 1002
+        }
+      }, {
+        "uid" : "b7b5e2d79876b9a0",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/42//#testresult/b7b5e2d79876b9a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633005372327,
+          "stop" : 1633005373330,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "c54d591953983e91",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/41//#testresult/c54d591953983e91",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633004977910,
+          "stop" : 1633004977911,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3e254d98959ce913",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/40//#testresult/3e254d98959ce913",
+        "status" : "failed",
+        "statusDetails" : "AssertionError\n",
+        "time" : {
+          "start" : 1633004775026,
+          "stop" : 1633004776030,
+          "duration" : 1004
+        }
+      }, {
+        "uid" : "1c3b92dbc7391487",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/39//#testresult/1c3b92dbc7391487",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633004333885,
+          "stop" : 1633004333886,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f861056965160b93",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/38//#testresult/f861056965160b93",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633004314278,
+          "stop" : 1633004314280,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "1a84ce0fd92fbd35",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/37//#testresult/1a84ce0fd92fbd35",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633001389778,
+          "stop" : 1633001389779,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "332bc1767b4c6216",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/36//#testresult/332bc1767b4c6216",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633001200442,
+          "stop" : 1633001201445,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "20d66e35b7fc3c70",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/35//#testresult/20d66e35b7fc3c70",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633001047199,
+          "stop" : 1633001047200,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "fb8ce390726276bc",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/34//#testresult/fb8ce390726276bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633000824203,
+          "stop" : 1633000825205,
+          "duration" : 1002
+        }
+      }, {
+        "uid" : "8d033ec5a3ff546c",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/33//#testresult/8d033ec5a3ff546c",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995557782,
+          "stop" : 1632995557784,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "2b87a0332c3c66fc",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/8//#testresult/2b87a0332c3c66fc",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995551752,
+          "stop" : 1632995551753,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "408510554fdae52b",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/7//#testresult/408510554fdae52b",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995234533,
+          "stop" : 1632995234535,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "66230328963b06a2",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/6//#testresult/66230328963b06a2",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995164942,
+          "stop" : 1632995164944,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "77f1d124b4dd2dd0",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/5//#testresult/77f1d124b4dd2dd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995142432,
+          "stop" : 1632995143435,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "8eb417199d673da8",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/4//#testresult/8eb417199d673da8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632994009468,
+          "stop" : 1632994010471,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "4a5d0f0bc6d60063",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/3//#testresult/4a5d0f0bc6d60063",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632993407455,
+          "stop" : 1632993408457,
+          "duration" : 1002
+        }
+      }, {
+        "uid" : "d48d56c186620064",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/31//#testresult/d48d56c186620064",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632993377684,
+          "stop" : 1632993378686,
+          "duration" : 1002
+        }
+      }, {
+        "uid" : "48ece90ec92b363c",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/1//#testresult/48ece90ec92b363c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError\n",
+        "time" : {
+          "start" : 1632992183519,
+          "stop" : 1632992184521,
+          "duration" : 1002
+        }
+      }, {
+        "uid" : "d67895f9b465573d",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/30//#testresult/d67895f9b465573d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632992171073,
+          "stop" : 1632992172075,
+          "duration" : 1002
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "e79241fcd594c7d6.json",
+  "parameterValues" : [ ]
+}
