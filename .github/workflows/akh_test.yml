@@ -30,7 +30,7 @@ jobs:
       - name: conditional command
         run: |
           echo "I am bucket: ${{ env.bucket }}"
-          if ${{ env.bucket }} == "rs-develop"; then
+          if ${{ env.bucket }} == 'rs-develop'; then
               echo "bingo bucket: ${{ env.bucket }}"
           else
               echo "domage bucket: ${{ env.bucket }}"
