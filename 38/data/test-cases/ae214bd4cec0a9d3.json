@@ -1,0 +1,314 @@
+{
+  "uid" : "ae214bd4cec0a9d3",
+  "name" : "Create new label for authorized user",
+  "fullName" : "Labels: Create new label for authorized user",
+  "historyId" : "8c3a5b90445408153e29b97a06975a23",
+  "time" : {
+    "start" : 1633004314277,
+    "stop" : 1633004314278,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+  "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/web_steps.py\", line 19, in create_label_with_title\n    maybe_throw_element_not_found_exception()\n  File \"features/steps/web_steps.py\", line 79, in maybe_throw_element_not_found_exception\n    raise RuntimeError(\"Element not found for xpath [//div[@class='something']]\")\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/web_steps.py\", line 19, in create_label_with_title\n    maybe_throw_element_not_found_exception()\n  File \"features/steps/web_steps.py\", line 79, in maybe_throw_element_not_found_exception\n    raise RuntimeError(\"Element not found for xpath [//div[@class='something']]\")\n",
+    "steps" : [ {
+      "name" : "When I open labels page",
+      "time" : {
+        "start" : 1633004314277,
+        "stop" : 1633004314277,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I create label with title \"hello\"",
+      "time" : {
+        "start" : 1633004314277,
+        "stop" : 1633004314278,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/web_steps.py\", line 19, in create_label_with_title\n    maybe_throw_element_not_found_exception()\n  File \"features/steps/web_steps.py\", line 79, in maybe_throw_element_not_found_exception\n    raise RuntimeError(\"Element not found for xpath [//div[@class='something']]\")\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should see label with title \"hello\"",
+      "time" : {
+        "start" : 1633004314278,
+        "stop" : 1633004314278,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 16,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 27
+      },
+      "items" : [ {
+        "uid" : "2385264ef710d9d5",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/37//#testresult/2385264ef710d9d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633001389776,
+          "stop" : 1633001389777,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a8cbc185f6e4414c",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/36//#testresult/a8cbc185f6e4414c",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633001200441,
+          "stop" : 1633001200442,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "560f0fc7a7915807",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/35//#testresult/560f0fc7a7915807",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1633001047198,
+          "stop" : 1633001047199,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "2c4b5dff1b89d5b",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/34//#testresult/2c4b5dff1b89d5b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633000824201,
+          "stop" : 1633000824202,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9cbb2c7da6249189",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/33//#testresult/9cbb2c7da6249189",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995557780,
+          "stop" : 1632995557782,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "7664c88e957ce13",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/8//#testresult/7664c88e957ce13",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995551750,
+          "stop" : 1632995551751,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "5711fbd53d4ec331",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/7//#testresult/5711fbd53d4ec331",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995234531,
+          "stop" : 1632995234533,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "7e1a005caa49ef87",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/6//#testresult/7e1a005caa49ef87",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632995164941,
+          "stop" : 1632995164942,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "86529cb5cf41992d",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/5//#testresult/86529cb5cf41992d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995142431,
+          "stop" : 1632995142432,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "1878b7815971934f",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/4//#testresult/1878b7815971934f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632994009467,
+          "stop" : 1632994009468,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9e5b6eba653c24ac",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/3//#testresult/9e5b6eba653c24ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632993407453,
+          "stop" : 1632993407454,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "1a1f587da60b8ce9",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/31//#testresult/1a1f587da60b8ce9",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632993377682,
+          "stop" : 1632993377683,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "93bcbb5a5167fed8",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/1//#testresult/93bcbb5a5167fed8",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632992183517,
+          "stop" : 1632992183518,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "746ee159670ff3af",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/30//#testresult/746ee159670ff3af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632992171071,
+          "stop" : 1632992171072,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "475e86cbe6ab7826",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/29//#testresult/475e86cbe6ab7826",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1632991935342,
+          "stop" : 1632991935343,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "959b44e6742f5ace",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/28//#testresult/959b44e6742f5ace",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1624289571567,
+          "stop" : 1624289571568,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "789d8745c2c65327",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/27//#testresult/789d8745c2c65327",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624289196596,
+          "stop" : 1624289196597,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "8840ad84653c839a",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/26//#testresult/8840ad84653c839a",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1624289141374,
+          "stop" : 1624289141375,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "b5b6feeba9202755",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/25//#testresult/b5b6feeba9202755",
+        "status" : "broken",
+        "statusDetails" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+        "time" : {
+          "start" : 1624289077623,
+          "stop" : 1624289077624,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "7423f330eb7fa734",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/24//#testresult/7423f330eb7fa734",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624287292098,
+          "stop" : 1624287292099,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "regress" ]
+  },
+  "source" : "ae214bd4cec0a9d3.json",
+  "parameterValues" : [ ]
+}
