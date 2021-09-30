@@ -1,4 +1,4 @@
-name: allure-python-behave
+name: allure-python-test
 
 on:
   push:
@@ -16,6 +16,15 @@ jobs:
     name: Run tests and generate Allure Report
     runs-on: ubuntu-latest
     steps:
+        # Input Parameters
+      - name: Setup variables for workflow dispatch
+        run: |
+          echo "bucket=${{ github.event.inputs.bucket }}" >> $GITHUB_ENV
+        if: github.event_name == 'workflow_dispatch'
+
+      - run: |
+          echo "bucket: ${{ env.bucket }}"
+    
       - uses: actions/checkout@v2
 
       - name: Set up Python 3.x
