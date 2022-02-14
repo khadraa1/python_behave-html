@@ -1,0 +1,368 @@
+{
+  "uid" : "190ab8cd32cc8065",
+  "name" : "Delete existing label via api",
+  "fullName" : "Labels: Delete existing label via api",
+  "historyId" : "717f0511ce4d0fe00e76113484a0f051",
+  "time" : {
+    "start" : 1644851373678,
+    "stop" : 1644851373679,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When I create label with title \"hello\" via api",
+      "time" : {
+        "start" : 1644851373678,
+        "stop" : 1644851373678,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /repos/:owner/:repo/labels",
+        "time" : {
+          "start" : 1644851373678,
+          "stop" : 1644851373678,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I delete label with title \"hello\" via api",
+      "time" : {
+        "start" : 1644851373678,
+        "stop" : 1644851373678,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/:owner/:repo/labels?text=\"hello\"",
+        "time" : {
+          "start" : 1644851373678,
+          "stop" : 1644851373678,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "DELETE /repos/:owner/:repo/labels/237",
+        "time" : {
+          "start" : 1644851373678,
+          "stop" : 1644851373678,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should not see label with content \"hello\" via api",
+      "time" : {
+        "start" : 1644851373679,
+        "stop" : 1644851373679,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/:owner/:repo/labels?text=\"hello\"",
+        "time" : {
+          "start" : 1644851373679,
+          "stop" : 1644851373679,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET /repos/:owner/:repo/labels/834",
+        "time" : {
+          "start" : 1644851373679,
+          "stop" : 1644851373679,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 37,
+        "unknown" : 0,
+        "total" : 37
+      },
+      "items" : [ {
+        "uid" : "2ace38f6db3d305a",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/48//#testresult/2ace38f6db3d305a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644850325851,
+          "stop" : 1644850325852,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "bf271c35b934343d",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/47//#testresult/bf271c35b934343d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644850221949,
+          "stop" : 1644850221950,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "2a16c98a823f1298",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/46//#testresult/2a16c98a823f1298",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644339297486,
+          "stop" : 1644339297487,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "98fd0ed599b76975",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/44//#testresult/98fd0ed599b76975",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633006827913,
+          "stop" : 1633006827914,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "4fb8ed3de5b94544",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/43//#testresult/4fb8ed3de5b94544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633006812264,
+          "stop" : 1633006812265,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "2d1c2d1011dc95cd",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/42//#testresult/2d1c2d1011dc95cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633005372324,
+          "stop" : 1633005372325,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3cb64bae327a6500",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/41//#testresult/3cb64bae327a6500",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633004977907,
+          "stop" : 1633004977908,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "5e57439d56a9ae57",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/40//#testresult/5e57439d56a9ae57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633004775023,
+          "stop" : 1633004775024,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "47caee4ecdf46b2c",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/39//#testresult/47caee4ecdf46b2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633004333882,
+          "stop" : 1633004333883,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "5fcb3d5d638ed5e9",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/38//#testresult/5fcb3d5d638ed5e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633004314275,
+          "stop" : 1633004314276,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "4de51f5b0d192772",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/37//#testresult/4de51f5b0d192772",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633001389775,
+          "stop" : 1633001389776,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "db7a4c91e3857602",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/36//#testresult/db7a4c91e3857602",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633001200439,
+          "stop" : 1633001200440,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9a6965db300edc67",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/35//#testresult/9a6965db300edc67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633001047196,
+          "stop" : 1633001047197,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "96cb494d9c6b6e83",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/34//#testresult/96cb494d9c6b6e83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633000824199,
+          "stop" : 1633000824200,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "e9853b40f0071433",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/33//#testresult/e9853b40f0071433",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995557778,
+          "stop" : 1632995557779,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "150f21b8d989d044",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/8//#testresult/150f21b8d989d044",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995551749,
+          "stop" : 1632995551750,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "6923a7f8d543084",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/7//#testresult/6923a7f8d543084",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995234529,
+          "stop" : 1632995234530,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "ce61bfe5afda10d5",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/6//#testresult/ce61bfe5afda10d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995164939,
+          "stop" : 1632995164940,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "dca69474aa57486f",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/5//#testresult/dca69474aa57486f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632995142429,
+          "stop" : 1632995142430,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "8a8c3181e1bae55d",
+        "reportUrl" : "https://khadraa1.github.io/python_behave/4//#testresult/8a8c3181e1bae55d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632994009465,
+          "stop" : 1632994009466,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "regress" ]
+  },
+  "source" : "190ab8cd32cc8065.json",
+  "parameterValues" : [ ]
+}
