@@ -16,9 +16,6 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
 
-      - name: Install Playwright
-        run: npm run test:install 
-
       - name: Setup environment variables
         run: |
           DATE=$(date -u -d 'today' +'%Y-%m-%d-%H-%M-%S')
