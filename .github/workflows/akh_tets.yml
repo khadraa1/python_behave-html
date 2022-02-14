@@ -1,4 +1,4 @@
-name: Non-Regression-Test on PR
+name: AKH Non-Regression-Test
 
 on:
   pull_request:
