@@ -1,12 +1,11 @@
 name: AKH Non-Regression-Test
 
-on:
-  pull_request:
-    branches: [main]
 
-concurrency:
-  group: ${{ github.head_ref }}
-  cancel-in-progress: true
+on:
+  push:
+    branches-ignore:
+      - '!master'
+      
 
 jobs:
   build_and_test:
