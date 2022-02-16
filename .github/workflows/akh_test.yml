@@ -1,37 +1,59 @@
-name: allure-python-test
+name: allure-python-behave
 
 on:
   push:
     branches-ignore:
       - '!master'
-    # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-    inputs:
-        bucket:
-          description: 'Bucket name in AWS S3 which contains the config.py, for example: rs-develop-config'
-          required: true  
 
 jobs:
   autotests:
     name: Run tests and generate Allure Report
     runs-on: ubuntu-latest
     steps:
-        # Input Parameters
-      - name: Setup variables for workflow dispatch
-        run: |
-          echo "bucket=${{ github.event.inputs.bucket }}" >> $GITHUB_ENV
-        if: github.event_name == 'workflow_dispatch'
-
-      - run: |
-          echo "bucket: ${{ env.bucket }}"
-    
       - uses: actions/checkout@v2
-      
-      - name: conditional command
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
         run: |
-          if ${{ env.bucket }} == 'rs-develop'; then
-                echo "tnr_branch=phase::gh-page"
-          else
-              echo "domage bucket: ${{ env.bucket }}"
-          fi
-      - run: echo $tnr_branch  
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check code style
+        if: always()
+        run: |
+          flake8
+
+      - name: Run Test
+        if: always()
+        run: behave --format=allure_behave.formatter:AllureFormatter -o allure-results
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        #id: allure-report
+        with:
+          allure_results: allure-results
+          #gh_pages: gh-pages
+          #allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
