@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+      "children" : [ {
+        "name" : "Create new label for authorized user",
+        "uid" : "fb0e8d40c2bebd15",
+        "parentUid" : "77cc10b9f3e25bb196ddb2f439d4e841",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645539306240,
+          "stop" : 1645539306243,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Add label to existing issue for authorized user",
+        "uid" : "18a41288f47ed50a",
+        "parentUid" : "77cc10b9f3e25bb196ddb2f439d4e841",
+        "status" : "broken",
+        "time" : {
+          "start" : 1645539306243,
+          "stop" : 1645539306244,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "77cc10b9f3e25bb196ddb2f439d4e841"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
