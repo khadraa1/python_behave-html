@@ -1,4 +1,4 @@
-name: allure-python-behave
+name: html-python-behave
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   autotests:
-    name: Run tests and generate Allure Report
+    name: Run tests and generate html Report
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
