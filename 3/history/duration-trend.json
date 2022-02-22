@@ -1,3 +1,10 @@
 [ {
+  "buildOrder" : 3,
+  "reportUrl" : "https://khadraa1.github.io/python_behave-html/3/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 2015
+  }
+}, {
   "data" : { }
 } ]

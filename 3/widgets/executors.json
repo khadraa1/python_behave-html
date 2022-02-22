@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://khadraa1.github.io/python_behave-html",
+  "buildOrder" : 3,
+  "buildName" : "GitHub Actions Run #1882765841",
+  "buildUrl" : "https://github.com/khadraa1/python_behave-html/actions/runs/1882765841",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://khadraa1.github.io/python_behave-html/3/"
+} ]

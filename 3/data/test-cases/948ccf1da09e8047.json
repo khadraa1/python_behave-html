@@ -1,0 +1,112 @@
+{
+  "uid" : "948ccf1da09e8047",
+  "name" : "Create new label for authorized user",
+  "fullName" : "Labels: Create new label for authorized user",
+  "historyId" : "8c3a5b90445408153e29b97a06975a23",
+  "time" : {
+    "start" : 1645547676631,
+    "stop" : 1645547676633,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "statusMessage" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+  "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/web_steps.py\", line 9, in open_labels_page\n    maybe_throw_element_not_found_exception()\n  File \"features/steps/web_steps.py\", line 79, in maybe_throw_element_not_found_exception\n    raise RuntimeError(\"Element not found for xpath [//div[@class='something']]\")\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/web_steps.py\", line 9, in open_labels_page\n    maybe_throw_element_not_found_exception()\n  File \"features/steps/web_steps.py\", line 79, in maybe_throw_element_not_found_exception\n    raise RuntimeError(\"Element not found for xpath [//div[@class='something']]\")\n",
+    "steps" : [ {
+      "name" : "When I open labels page",
+      "time" : {
+        "start" : 1645547676631,
+        "stop" : 1645547676633,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "RuntimeError: Element not found for xpath [//div[@class='something']]\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/web_steps.py\", line 9, in open_labels_page\n    maybe_throw_element_not_found_exception()\n  File \"features/steps/web_steps.py\", line 79, in maybe_throw_element_not_found_exception\n    raise RuntimeError(\"Element not found for xpath [//div[@class='something']]\")\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And I create label with title \"hello\"",
+      "time" : {
+        "start" : 1645547676633,
+        "stop" : 1645547676633,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I should see label with title \"hello\"",
+      "time" : {
+        "start" : 1645547676633,
+        "stop" : 1645547676633,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "regress" ]
+  },
+  "source" : "948ccf1da09e8047.json",
+  "parameterValues" : [ ]
+}
