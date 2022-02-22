@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Sep 30 09:52:39 GMT 2021","Thu Sep 30 09:52:39 GMT 2021","2","","","","","","Create new milestone for authorized user",""
-"failed","Thu Sep 30 09:52:37 GMT 2021","Thu Sep 30 09:52:39 GMT 2021","2005","","","","","","Delete existing label for authorized user",""
-"passed","Thu Sep 30 09:52:37 GMT 2021","Thu Sep 30 09:52:37 GMT 2021","1","","","","","","Delete existing label via api",""
-"broken","Thu Sep 30 09:52:37 GMT 2021","Thu Sep 30 09:52:37 GMT 2021","2","","","","","","Create new label for authorized user",""
-"passed","Thu Sep 30 09:52:39 GMT 2021","Thu Sep 30 09:52:39 GMT 2021","2","","","","","","Close existing milestone for authorized user",""
-"passed","Thu Sep 30 09:52:37 GMT 2021","Thu Sep 30 09:52:37 GMT 2021","1","","","","","","Create new label via api",""
-"broken","Thu Sep 30 09:52:37 GMT 2021","Thu Sep 30 09:52:37 GMT 2021","2","","","","","","Add label to existing issue for authorized user",""
