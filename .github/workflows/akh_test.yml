@@ -23,7 +23,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Test
-        if: always()
         run: behave --no-capture --no-logcapture -f html -o build/all.html
         continue-on-error: true
 
