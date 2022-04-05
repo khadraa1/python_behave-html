@@ -1,10 +1,11 @@
 name: html-behave
 
 on:
-  push:
-    branches-ignore:
-      - '!master'
-
+   workflow_dispatch:
+    inputs:
+      username:
+          description: 'Username'
+          required: false
 jobs:
   autotests:
     name: Run tests and generate Allure Report
