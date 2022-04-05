@@ -24,7 +24,6 @@ jobs:
 
       - name: Run Test
         run: | 
-          source behave-env/bin/activate
           behave --no-capture --no-logcapture -f html -o build/all.html
           continue-on-error: true
 
