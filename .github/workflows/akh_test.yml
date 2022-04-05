@@ -24,9 +24,33 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Test
+        id: nrt  
         run: | 
           behave --no-capture --no-logcapture -f html -o build/all.html
           continue-on-error: true
+          
+      - name: Setup environment variables
+        run: |
+          DATE=$(date -u -d 'today' +'%Y-%m-%d-%H-%M-%S')
+          TARGET=${{github.event.number}}
+          TOTAL=${{steps.nrt.outputs.total}}
+          PASSED=${{steps.nrt.outputs.passed}}
+          FAILED=${{steps.nrt.outputs.failed}}
+          SKIPPED=${{steps.nrt.outputs.skipped}}
+          DURATION="${{steps.nrt.outputs.duration}}"
+          echo "DATE=$DATE" >> $GITHUB_ENV
+          echo "REPORT=$DATE.$TARGET.$PASSED.$FAILED.$SKIPPED" >> $GITHUB_ENV
+          echo "TOTAL=$TOTAL" >> $GITHUB_ENV
+          echo "PASSED=$PASSED" >> $GITHUB_ENV
+          echo "FAILED=$FAILED" >> $GITHUB_ENV
+          echo "SKIPPED=$SKIPPED" >> $GITHUB_ENV
+          echo "DURATION=$DURATION" >> $GITHUB_ENV
+          if ${{ steps.nrt.outputs.success }}
+          then
+            echo "RESULT=Succeded :heavy_check_mark:" >> $GITHUB_ENV
+          else
+            echo "RESULT=Failed :x:" >> $GITHUB_ENV
+          fi             
 
       - name: Upload test results
         uses: actions/upload-artifact@v2
