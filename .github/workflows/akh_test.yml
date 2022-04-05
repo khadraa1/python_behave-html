@@ -33,4 +33,4 @@ jobs:
         if: always()
         with:
           name: reports
-          path: ${{ github.workspace }}/rhub_qa/build
+          path: ${{ github.workspace }}/build
