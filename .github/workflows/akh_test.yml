@@ -1,4 +1,4 @@
-name: html-behave
+name: Tests - Behave on Standalone
 
 on:
    workflow_dispatch:
