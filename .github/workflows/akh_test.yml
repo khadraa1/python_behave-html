@@ -1,11 +1,10 @@
-name: Tests - Behave on Standalone
+name: allure-python-behave
 
 on:
-   workflow_dispatch:
-    inputs:
-      username:
-          description: 'Username'
-          required: false
+  push:
+    branches-ignore:
+      - '!master'
+
 jobs:
   autotests:
     name: Run tests and generate Allure Report
@@ -23,8 +22,38 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Check code style
+        if: always()
+        run: |
+          flake8
+
       - name: Run Test
-        id: nrt  
-        run: | 
-          behave --no-capture --no-logcapture -f html -o build/all.html ././behave.json-reporter.ts
-          continue-on-error: true
+        if: always()
+        run: behave --format=allure_behave.formatter:AllureFormatter -o allure-results
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        #id: allure-report
+        with:
+          allure_results: allure-results
+          #gh_pages: gh-pages
+          #allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
