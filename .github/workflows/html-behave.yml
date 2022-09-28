@@ -29,7 +29,7 @@ jobs:
         run: behave --no-capture --no-logcapture -f html -o behave-report.html
         continue-on-error: true
 
-      - name: Get Allure history
+      - name: Get Html history
         uses: actions/checkout@v2
         if: always()
         continue-on-error: true
