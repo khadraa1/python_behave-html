@@ -40,11 +40,11 @@ jobs:
       - name: Html Report action from marketplace
         uses: simple-elf/html-report-action@master
         if: always()
-        #id: html-report
+        id: html-report
         with:
           html_results: html-results
-          #gh_pages: gh-pages
-          #html_report: html-report
+          gh_pages: gh-pages
+          html_report: html-report
           html_history: html-history
 
       - name: Deploy report to Github Pages
