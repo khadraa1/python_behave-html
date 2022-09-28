@@ -1,4 +1,4 @@
-name: html-python-behave
+name: html-behave
 
 on: [workflow_dispatch]
 
