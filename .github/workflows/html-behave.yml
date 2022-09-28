@@ -1,0 +1,56 @@
+name: html-python-behave
+
+on: [workflow_dispatch]
+
+jobs:
+  autotests:
+    name: Run tests and generate Allure Report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check code style
+        if: always()
+        run: |
+          flake8
+
+      - name: Run Test
+        if: always()
+        run: behave --no-capture --no-logcapture -f html -o behave-report.html
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Html Report action from marketplace
+        uses: simple-elf/html-report-action@master
+        if: always()
+        #id: html-report
+        with:
+          allure_results: html-results
+          #gh_pages: gh-pages
+          #html_report: html-report
+          allure_history: html-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: html-history
