@@ -2,3 +2,4 @@ behave>=1.2.6
 allure-behave>=2.8.18
 flake8>=3.8.3
 behave-html-formatter==0.9.6
+behavex==1.5.10
