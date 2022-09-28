@@ -42,10 +42,10 @@ jobs:
         if: always()
         #id: html-report
         with:
-          allure_results: html-results
+          html_results: html-results
           #gh_pages: gh-pages
           #html_report: html-report
-          allure_history: html-history
+          html_history: html-history
 
       - name: Deploy report to Github Pages
         if: always()
