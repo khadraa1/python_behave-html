@@ -37,7 +37,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from marketplace
+      - name: Html Report action from marketplace
         uses: simple-elf/html-report-action@master
         if: always()
         id: html-report
